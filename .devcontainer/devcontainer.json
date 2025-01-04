@@ -1,0 +1,12 @@
+{
+  "name": "My Dev Container",
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "/workspaces/java_extention/.devcontainer/java-development-extension-pack-1.0.0.vsix"
+      ]
+    }
+  },
+  "postCreateCommand": "chmod +x /workspaces/java_extention/.devcontainer/java-development-extension-pack-1.0.0.vsix"
+}
